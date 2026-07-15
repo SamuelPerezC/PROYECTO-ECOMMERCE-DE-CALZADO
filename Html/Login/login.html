@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión | Calzado Cúcuta Store</title>
+    
+    <!--iconos-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!--estilos-->
+    <link rel="stylesheet" href="../../Css/styles-login.css">
+    
+</head>
+<body>
+    <main class="contenedor-acceder">
+        <section class="contenedor-mostrar">
+            <img src="../../Imagenes/Logo_ccs.webp"
+                        srcset="
+                            ../../Imagenes/Logo_movil.webp 120w,
+                            ../../Imagenes/Logo_tablet.webp 160w,
+                            ../../Imagenes/Logo_desktop.webp 200w
+                        "
+                        sizes="
+                            (max-width: 480px) 120px,
+                            (max-width: 768px) 160px,
+                            200px
+                        "
+                        alt="Logo de Calzado Cúcuta Store"
+                        class="navbar__logo logo--login">
+        </section>
+        <header>
+            <h1 class="titulo-mostrar">Bienvenido a Calzado Cúcuta Store</h1>
+            <p class="texto-mostrar">Inicia sesión para acceder a tu cuenta</p>
+        </header>
+
+
+        <form action="#" class="Formulario-validar">
+            <div class="grupo-escribir">
+
+                <label for="usuario" class="label-escribir"> Usuario
+                </label>
+
+                <div class="contenedor-input" aria-label="usuario">
+
+                    <i class="fa-regular fa-user icono-mostrar"></i>
+
+                    <input type="text" id="usuario" name="usuario" class="campo-escribir" placeholder="Nombre de Usuario" required>
+
+                </div>
+            </div>
+            <div class="grupo-escribir">
+
+                <label for="password" class="label-escribir"> Contraseña
+                </label>
+
+                <div class="contenedor-input" aria-label="Contraseña">
+
+                    <i class="fa-solid fa-lock icono-mostrar"></i>
+
+                    <input type="password" id="password" class="campo-escribir" placeholder="Contraseña" required>
+
+                    <input type="checkbox" >
+
+                </div>
+
+            </div>
+            
+            <section class="contenedor-login">
+                <div>
+                    <a href="#" class="enlace-recuperar"> ¿Olvidaste tu contraseña? </a>
+                </div>
+
+                <div>
+                    <a href="../Sign Up/sign_up.html" class="enlace_signUp-new"> Crear Cuenta</a>
+                </div>
+            </section>
+
+            <button type="submit" class="boton-ingresar"> Iniciar Sesión </button>
+        </form>
+    </main>
+</body>
+</html>

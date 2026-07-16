@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta 
+    name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Crear Cuenta | Calzado Cúcuta Store
+    </title>
+
+    <meta
+    name="description"
+    content="Crea tu cuenta en Calzado Cúcuta Store y disfruta de una experiencia de compra personalizada."
+    >
+
+    <meta
+    name="robots"
+    content="noindex,nofollow"
+    >
+    
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<main class="contenedor-registro">
+
+    <section class="registro">
+
+        <!-- Logo -->
+
+        <section class="registro__logo">
+
+            <img 
+            src="#"
+            alt="Logo Calzado Cúcuta Store"
+            class="registro__imagen" 
+            loading="lazy">
+
+        </section>
+
+
+
+        <!-- Encabezado -->
+
+        <header class="registro__encabezado">
+            <h1 class="registro__titulo">Crear Cuenta</h1>
+
+            <p class="registro__texto">Regístrate para comenzar a comprar </p>
+
+        </header>
+
+
+
+
+        <!-- Formulario -->
+
+        <form action="#"class="formulario-validar" method="post">
+
+            <fieldset class="formulario__datos">
+
+                <legend class="formulario__titulo"> Datos personales </legend>
+
+                <!-- Nombre -->
+
+                <div class="formulario__grupo" aria-label="ingresar nombre">
+
+                    <label for="nombre"class="formulario__label">
+                        Nombre completo
+                    </label>
+
+
+                    <input
+                    class="formulario__campo"
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Ej: Pedro Castaño"
+                    autocomplete="name"
+                    minlength="3"
+                    required>
+                </div>
+
+
+                <!-- Correo -->
+
+                <div class="formulario__grupo" aria-label="correo">
+
+                    <label for="correo" class="formulario__label">
+                        Correo electrónico
+                    </label>
+
+
+                    <input
+                    class="formulario__campo"
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    placeholder="Ej: david@gmail.com"
+                    autocomplete="email"
+                    required>
+
+                </div>
+
+
+                <!-- Contraseña -->
+
+                <div class="formulario__grupo" aria-label="contraseña">
+
+
+                    <label for="password" class="formulario__label">
+                        Contraseña
+                    </label>
+
+                    <input
+                    class="formulario__campo"
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Ingresa una contraseña"
+                    autocomplete="new-password"
+                    minlength="8"
+                    required>
+
+                </div>
+
+
+                <!-- Confirmar contraseña -->
+
+                <div class="formulario__grupo" aria-label="Confirmar contraseña">
+
+                    <label for="repeatPassword" class="formulario__label">
+                        Confirmar contraseña
+                    </label>
+
+
+                    <input
+                    class="formulario__campo"
+                    type="password"
+                    id="repeatPassword"
+                    name="repeatPassword"
+                    placeholder="Repite tu contraseña"
+                    autocomplete="new-password"
+                    minlength="8"
+                    required>
+
+                </div>
+
+                <!-- Terminos -->
+
+                <div class="formulario__terminos" aria-label="temrinos y condiciones">
+
+                    <input
+                    class="formulario__checkbox"
+                    type="checkbox"
+                    id="terminos"
+                    name="terminos"
+                    required>
+
+
+                    <label for="terminos" class="formulario__label-terminos">
+                        Acepto los términos y condiciones
+                    </label>
+
+                </div>
+
+                <!-- Botón -->
+
+                <button 
+                type="submit"
+                id="botonRegistrar"
+                class="formulario__boton">
+
+                    Crear Cuenta
+
+                </button>
+
+                <!-- Login -->
+
+                <a 
+                href="../Login/login.html"
+                class="formulario__enlace">
+
+                    ¿Ya tienes una cuenta? Iniciar sesión
+
+                </a>
+
+            </fieldset>
+
+        </form>
+
+    </section>
+
+</main>
+
+</body>
+
+<script type="module" src="../../JavaScript/controladores/signUpControlador.js"></script>
+
+</html>

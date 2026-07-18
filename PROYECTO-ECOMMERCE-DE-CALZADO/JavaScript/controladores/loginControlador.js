@@ -15,10 +15,10 @@ formulario.addEventListener("submit", function(evento){
 
     if(usuario){
 
-        api.guardarUsuarioActivoUsuarioActivo(usuario)
+        api.guardarUsuarioActivo(usuario)
 
         alert(
-            `Bienvenido ${usuario.nombre}`
+            `Bienvenido Usuario`
         )
         window.location.href = "../../index.html";
     }else{

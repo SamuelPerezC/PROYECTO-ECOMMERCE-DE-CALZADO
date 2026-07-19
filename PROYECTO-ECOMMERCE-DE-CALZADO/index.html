@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compra calzado deportivo original Nike, Adidas, Puma y New Balance con envíos a toda Colombia.">
+
+    <meta name="keywords" content="calzado, nike, adidas, jordan, tenis, zapatos deportivos">   
+    <meta name="author" content="Calzado Cúcuta Store">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>CCS</title>
+        <title>Calzado Cúcuta Store</title>
 </head>
 <body>
     <header class="header">
-        <section class="section-header">
+        <section class="header__top">
             <div>
                 <p>Envios a Toda Colombia (1-3 días hábiles)</p>
             </div>
@@ -17,11 +22,11 @@
             </div>
             <div>
                 <a href="#">Ayuda</a>
-                <button>Mi cuenta</button>
+                <a href="#">Mi Cuenta</a>
             </div>
         </section>
 
-        <nav class="navbar">
+        <nav class="navbar" aria-label="menu principal">
             <div class="navbar__logo">
                 <a href="./index.html" class="navbar__logo-enlace">
                     
@@ -41,7 +46,7 @@
 
                 </a>       
             </div>
-            <ul class="navbar__menu">
+            <ul class="navbar__menu" >
                 <li class="navbar__item"><a href="./index.html" class="navbar__enlace">Inicio</a></li>
                 <li class="navbar__item"><a href="#" class="navbar__enlace">Productos</a></li>
                 <li class="navbar__item"><a href="#" class="navbar__enlace">Ofertas</a></li>
@@ -84,20 +89,23 @@
 
             <div class="hero__contenido">
 
-                <h3 class="hero_subtitulo">Nueva Coleccion</h3>
+                <p class="hero_subtitulo">Nueva Coleccion</p> 
                 <h1 class="hero__titulo">Encuentra Tu Proximo Par Favorito</h1>
 
                 <p class="hero__texto">Los mejores estilos, la mejor calidad y el confort que tus pies merecen.</p>
 
-                <a href="#" class="boton__comprar">
+                <div class="hero__botones">
+                    <a href="#" class="boton__comprar">
                     Comprar Ahora
-                </a>
+                    </a>
 
-                <a href="#" class="boton__explorar">Explorar Coleccion</a>
+                    <a href="#" class="boton__explorar">Explorar Coleccion</a>
+                </div>
+                
 
             </div>
 
-            <picture class="hero__imagen">
+            <picture class="hero__picture">
                 <source
                     media="(max-width: 480px)"
                     srcset="../../Imagenes/hero-movil.webp"

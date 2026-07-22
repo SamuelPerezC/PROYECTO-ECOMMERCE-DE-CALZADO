@@ -1,0 +1,202 @@
+/* contenedor pricnipla */
+
+.contenedor-registro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    width: min(1100px, 92%);
+
+    min-height: 650px;
+
+    margin: 40px auto;
+
+    padding: 25px;
+
+    background-color: var(--color-white);
+
+    border-radius: var(--radio-contenedor);
+
+    box-shadow: var(--sombra-login);
+}
+
+
+/* logo */
+
+.main__logo {
+    grid-column: 1 / -1;
+
+    display: flex;
+    align-items: center;
+
+    height: 60px;
+}
+
+
+.main__logo img {
+    width: 200px;
+    height: auto;
+}
+
+
+/* hero */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+
+.hero__picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+.hero__imagen {
+    width: 100%;
+    max-width: 500px;
+
+    object-fit: contain;
+}
+
+
+/* seccion registro */
+
+.registro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 430px;
+
+    margin: 0 auto;
+
+    padding: 20px 30px;
+}
+
+
+/* encabezado*/
+
+.registro__encabezado {
+    margin-bottom: 25px;
+}
+
+
+.registro__subtitulo {
+    margin-bottom: 8px;
+
+    color: var(--color-primary);
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+
+.registro__titulo {
+    margin-bottom: 8px;
+
+    color: var(--color-text-primary);
+
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+.registro__texto {
+    color: var(--color-texto-secundary);
+
+    font-size: 0.85rem;
+}
+
+
+/* formulariio*/
+
+.formulario-validar {
+    width: 100%;
+}
+
+
+.formulario__datos {
+    display: flex;
+    flex-direction: column;
+
+    gap: 17px;
+
+    border: none;
+}
+
+
+/* legend*/
+
+.formulario__titulo {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+
+    overflow: hidden;
+
+    clip: rect(0, 0, 0, 0);
+}
+
+
+/* terminos y condiciones */
+
+.formulario__terminos {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 2px;
+}
+
+
+.formulario__terminos .formulario-login__checkbox {
+    flex-shrink: 0;
+}
+
+
+.formulario__terminos .formulario-login__label-terminos {
+    color: var(--color-texto-secundary);
+
+    font-size: 0.75rem;
+
+    cursor: pointer;
+}
+
+
+
+
+.formulario__enlace {
+    display: block;
+
+    margin-top: 2px;
+
+    color: var(--color-texto-secundary);
+
+    font-size: 0.8rem;
+
+    text-align: center;
+
+    transition: color var(--transicion);
+}
+
+
+.form-login{
+    color: var(--color-primary);
+}
+
+.form-login:hover{
+    color: var(--color-primary-dark);
+}

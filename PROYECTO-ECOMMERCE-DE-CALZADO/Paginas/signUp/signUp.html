@@ -34,7 +34,7 @@
 <main class="contenedor-registro">
 
     <section class="main__logo">         
-        <img src="#"
+        <img src="../../imagenes/logo-css.webp"
             srcset="
                 ../../Imagenes/LogoLogin_movil.webp 120w,
                 ../../Imagenes/LogoLogin_tablet.webp 160w,
@@ -75,7 +75,7 @@
         <!-- Encabezado -->
 
         <header class="registro__encabezado">
-            <h2 class="registro__subtitulo">Crear Cuenta</h1>
+            <h2 class="registro__subtitulo">Crear Cuenta</h2>
 
             <h1 class="registro__titulo">Regístrarse </h1>
 
@@ -100,16 +100,20 @@
                         Nombre completo
                     </label>
 
+                    <div class="formulario-login__contenedor">
 
-                    <input
-                    class="formulario__campo"
-                    type="text"
-                    id="nombre"
-                    name="nombre"
-                    placeholder="Ej: Pedro Castaño"
-                    autocomplete="name"
-                    minlength="3"
-                    required>
+                        <i class="fa-solid fa-user"></i>
+
+                        <input
+                        class="formulario-login__campo"
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Ej: Pedro Castaño"
+                        autocomplete="name"
+                        minlength="3"
+                        required>
+                    </div>
                 </div>
 
 
@@ -121,16 +125,19 @@
                         Correo electrónico
                     </label>
 
+                    <div class="formulario-login__contenedor">
 
-                    <input
-                    class="formulario__campo"
-                    type="email"
-                    id="correo"
-                    name="correo"
-                    placeholder="Ej: david@gmail.com"
-                    autocomplete="email"
-                    required>
+                        <i class="fa-regular fa-envelope"></i>
 
+                        <input
+                        class="formulario-login__campo"
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="Ej: david@gmail.com"
+                        autocomplete="email"
+                        required>
+                    </div>
                 </div>
 
 
@@ -143,15 +150,30 @@
                         Contraseña
                     </label>
 
-                    <input
-                    class="formulario__campo"
-                    type="password"
-                    id="password"
-                    name="password"
-                    placeholder="Ingresa una contraseña"
-                    autocomplete="new-password"
-                    minlength="8"
-                    required>
+                    <div class="formulario-login__contenedor">
+
+                        <i class="fa-solid fa-lock"></i>
+
+
+                        <input
+                        class="formulario-login__campo"
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Ingresa una contraseña"
+                        autocomplete="new-password"
+                        minlength="8"
+                        required>
+
+                        <button
+                        type="button"
+                        class="formulario-login__mostrar"
+                        aria-label="Mostrar contraseña">
+
+                            <i class="fa-regular fa-eye"></i>
+                        
+                        </button>
+                    </div>
 
                 </div>
 
@@ -164,16 +186,29 @@
                         Confirmar contraseña
                     </label>
 
+                    <div class="formulario-login__contenedor">
 
-                    <input
-                    class="formulario__campo"
-                    type="password"
-                    id="repeatPassword"
-                    name="repeatPassword"
-                    placeholder="Repite tu contraseña"
-                    autocomplete="new-password"
-                    minlength="8"
-                    required>
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                        class="formulario-login__campo"
+                        type="password"
+                        id="repeatPassword"
+                        name="repeatPassword"
+                        placeholder="Repite tu contraseña"
+                        autocomplete="new-password"
+                        minlength="8"
+                        required>
+
+                        <button
+                        type="button"
+                        class="formulario-login__mostrar"
+                        aria-label="Mostrar contraseña">
+
+                            <i class="fa-regular fa-eye"></i>
+                        
+                        </button>
+                    </div>
 
                 </div>
 
@@ -182,7 +217,7 @@
                 <div class="formulario__terminos" aria-label="temrinos y condiciones">
 
                     <input
-                    class="formulario__checkbox"
+                    class="formulario-login__checkbox"
                     type="checkbox"
                     id="terminos"
                     name="terminos"
@@ -212,7 +247,7 @@
                 href="../Login/login.html"
                 class="formulario__enlace">
 
-                    ¿Ya tienes una cuenta? Iniciar sesión
+                    ¿Ya tienes una cuenta? <span class="formulario__ enlace form-login"> Iniciar Sesion</span>
 
                 </a>
 

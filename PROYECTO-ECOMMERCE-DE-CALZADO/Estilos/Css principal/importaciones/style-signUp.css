@@ -3,4 +3,6 @@
 @import url(../../base/base.css);
 
 @import url(../../componentes/inputs.css);
-@import url(../../componentes/botones.css)
+@import url(../../componentes/botones.css);
+
+@import url(../css/signUp.css);

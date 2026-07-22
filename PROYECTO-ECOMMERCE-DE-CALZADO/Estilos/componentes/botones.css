@@ -1,0 +1,50 @@
+/*boton principal*/
+
+.formulario-login__boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 48px;
+
+    border: none;
+    border-radius: var(--radio-boton);
+
+    background-color: var(--color-primary);
+    color: var(--color-white);
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    transition: background-color var(--transicion),
+                transform var(--transicion),
+                box-shadow var(--transicion);
+}
+
+
+.formulario-login__boton:hover {
+    background-color: var(--color-primary-hover);
+
+    box-shadow: 0 4px 12px rgba(22, 199, 99, 0.25);
+}
+
+
+.formulario-login__boton:active {
+    transform: scale(0.98);
+}
+
+
+/* estado focus*/
+
+.formulario-login__boton:focus-visible {
+    outline: 3px solid rgba(22, 199, 99, 0.3);
+    outline-offset: 2px;
+}
+
+
+/* icono */
+
+.formulario-login__boton i {
+    margin-left: 10px;
+}

@@ -26,38 +26,62 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <link rel="stylesheet" href="../../Estilos/Css principal/importaciones/style-signUp.css">
 </head>
 
 <body>
 
 <main class="contenedor-registro">
 
+    <section class="main__logo">         
+        <img src="#"
+            srcset="
+                ../../Imagenes/LogoLogin_movil.webp 120w,
+                ../../Imagenes/LogoLogin_tablet.webp 160w,
+                ../../Imagenes/LogoLogin_desktop.webp 200w
+            "
+            sizes="
+                (max-width: 480px) 120px,
+                (max-width: 768px) 160px,
+                200px
+            "
+            alt="Logo de login"
+            >    
+    </section>
+
+
+    <section class="hero">
+        <picture class="hero__picture">
+            <source
+                media="(max-width: 480px)"
+                srcset="../../Imagenes/hero-movil.webp"
+            >
+            <source
+                media="(max-width: 768px)"
+                srcset="../../Imagenes/hero-tablet.webp"
+            >
+            <img
+                src="#"
+                alt="Zapatos deportivos"
+                class="hero__imagen"
+                fetchpriority="high"
+                decoding="async"
+            >
+        </picture>
+    </section>
+
     <section class="registro">
-
-        <!-- Logo -->
-
-        <section class="registro__logo">
-
-            <img 
-            src="#"
-            alt="Logo Calzado Cúcuta Store"
-            class="registro__imagen" 
-            loading="lazy">
-
-        </section>
-
-
 
         <!-- Encabezado -->
 
         <header class="registro__encabezado">
-            <h1 class="registro__titulo">Crear Cuenta</h1>
+            <h2 class="registro__subtitulo">Crear Cuenta</h1>
 
-            <p class="registro__texto">Regístrate para comenzar a comprar </p>
+            <h1 class="registro__titulo">Regístrarse </h1>
+
+            <p class="registro__texto">Completa Tus Datos Para Crear Tu Cuenta</p>
 
         </header>
-
-
 
 
         <!-- Formulario -->
@@ -70,9 +94,9 @@
 
                 <!-- Nombre -->
 
-                <div class="formulario__grupo" aria-label="ingresar nombre">
+                <div class="formulario-login__grupo" aria-label="ingresar nombre">
 
-                    <label for="nombre"class="formulario__label">
+                    <label for="nombre"class="formulario-login__label">
                         Nombre completo
                     </label>
 
@@ -91,9 +115,9 @@
 
                 <!-- Correo -->
 
-                <div class="formulario__grupo" aria-label="correo">
+                <div class="formulario-login__grupo" aria-label="correo">
 
-                    <label for="correo" class="formulario__label">
+                    <label for="correo" class="formulario-login__label">
                         Correo electrónico
                     </label>
 
@@ -112,10 +136,10 @@
 
                 <!-- Contraseña -->
 
-                <div class="formulario__grupo" aria-label="contraseña">
+                <div class="formulario-login__grupo" aria-label="contraseña">
 
 
-                    <label for="password" class="formulario__label">
+                    <label for="password" class="formulario-login__label">
                         Contraseña
                     </label>
 
@@ -134,9 +158,9 @@
 
                 <!-- Confirmar contraseña -->
 
-                <div class="formulario__grupo" aria-label="Confirmar contraseña">
+                <div class="formulario-login__grupo" aria-label="Confirmar contraseña">
 
-                    <label for="repeatPassword" class="formulario__label">
+                    <label for="repeatPassword" class="formulario-login__label">
                         Confirmar contraseña
                     </label>
 
@@ -165,7 +189,7 @@
                     required>
 
 
-                    <label for="terminos" class="formulario__label-terminos">
+                    <label for="terminos" class="formulario-login__label-terminos">
                         Acepto los términos y condiciones
                     </label>
 
@@ -176,7 +200,7 @@
                 <button 
                 type="submit"
                 id="botonRegistrar"
-                class="formulario__boton">
+                class="formulario-login__boton">
 
                     Crear Cuenta
 

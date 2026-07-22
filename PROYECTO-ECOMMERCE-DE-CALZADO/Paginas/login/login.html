@@ -32,6 +32,9 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <link rel="stylesheet" href="../../Estilos/Css principal/importaciones/style-login.css">
+
+
 
 </head>
 
@@ -39,30 +42,56 @@
 
 <main class="contenedor-login">
 
-    <section class="login">
+    <section class="main__logo">         
+        <img src="#"
+            srcset="
+                ../../Imagenes/LogoLogin_movil.webp 120w,
+                ../../Imagenes/LogoLogin_tablet.webp 160w,
+                ../../Imagenes/LogoLogin_desktop.webp 200w
+            "
+            sizes="
+                (max-width: 480px) 120px,
+                (max-width: 768px) 160px,
+                200px
+            "
+            alt="Logo de login"
+            >    
+    </section>
 
-        <!-- Logo -->
 
-        <section class="login__logo">
+    <section class="hero">
+        <picture class="hero__picture">
+            <source
+                media="(max-width: 480px)"
+                srcset="../../Imagenes/hero-movil.webp"
+            >
+            <source
+                media="(max-width: 768px)"
+                srcset="../../Imagenes/hero-tablet.webp"
+            >
             <img
-            src="#"
-            alt="Logo Calzado Cúcuta Store"
-            class="login__imagen" 
-            loading="lazy">
-        </section>
+                src="#"
+                alt="Zapatos deportivos"
+                class="hero__imagen"
+                fetchpriority="high"
+                decoding="async"
+            >
+        </picture>
+    </section>
 
+    <section class="login">
 
         <!-- Encabezado -->
 
         <header class="login__encabezado">
 
-            <h1 class="login__titulo">
+            <h2 class="login__subtitulo">
                 Bienvenido de nuevo
-            </h1>
+            </h2>
 
-            <p class="login__texto">
-                Inicia sesión para acceder a tu cuenta
-            </p>
+            <h1 class="login__titulo">
+                Inicia sesión 
+            </h1>
 
         </header>
 
@@ -160,7 +189,8 @@
                 <!-- Botón -->
 
                 <button type="submit" id="botonLogin" class="formulario-login__boton">
-                    Iniciar sesión
+                    <span>Iniciar Sesion </span>
+                    <i class="fa-solid fa-arrow-right"></i>
                 </button>
 
                 <!-- Registro -->

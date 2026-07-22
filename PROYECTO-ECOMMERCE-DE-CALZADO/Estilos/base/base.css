@@ -1,0 +1,27 @@
+html{
+    scroll-padding-top: 120px;
+}
+body {
+    min-height: 100vh;
+
+    font-family: sans-serif;
+
+    background-color: var(--color-bg);
+
+    color: var(--color-text-primary);
+
+    line-height: 1.5;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+p {
+    color: var(--color-text-secondary);
+}
+
+input,textarea,select,button {
+    font-family: inherit;
+}

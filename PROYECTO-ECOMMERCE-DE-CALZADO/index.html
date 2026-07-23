@@ -10,19 +10,44 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <title>Calzado Cúcuta Store</title>
+
+        <link rel="stylesheet" href="Estilos/Css principal/importaciones/style-index.css">
 </head>
 <body>
     <header class="header">
         <section class="header__top">
             <div>
-                <p>Envios a Toda Colombia (1-3 días hábiles)</p>
+                <p>
+                    <i class="fa-solid fa-truck"></i>
+                    Envios a Toda Colombia (1-3 días hábiles)
+                </p>
             </div>
             <div>
-                <p>Pago 100% Seguro</p>
+                <p>
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    Cambios Hasta Por 30 Dias
+                </p>
             </div>
             <div>
-                <a href="#">Ayuda</a>
-                <a href="#">Mi Cuenta</a>
+                <p>
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    Pago 100% Seguro
+                </p>
+            </div>
+            
+            <div class="navbar__auth">
+
+                <a href="./Paginas/signUp/signUp.html" class="navbar__registro">
+                    Crear Cuenta
+                </a>
+
+
+                <a href="./Paginas/login/login.html" class="navbar__login">
+                    Iniciar Sesion
+                </a>
+
+                <i class="fa-solid fa-user"></i>
+
             </div>
         </section>
 
@@ -30,11 +55,11 @@
             <div class="navbar__logo">
                 <a href="./index.html" class="navbar__logo-enlace">
                     
-                    <img src="#"
+                    <img src="imagenes/logo-css.webp"
                         srcset="
-                            ../../Imagenes/Logo_movil.webp 120w,
-                            ../../Imagenes/Logo_tablet.webp 160w,
-                            ../../Imagenes/Logo_desktop.webp 200w
+                            imagenes/LogoLogin_movil.webp 120w,
+                            imagenes/LogoLogin_tablet.webp 160w,
+                            imagenes/LogoLogin_desktop.webp 200w
                         "
                         sizes="
                             (max-width: 480px) 120px,
@@ -55,17 +80,7 @@
             </ul>
 
             <div class="navbar__acciones">
-                <div class="navbar__auth">
-
-                    <a href="./Paginas/login/login.html" class="navbar__login">
-                        Login
-                    </a>
-
-                    <a href="./Paginas/signUp/signUp.html" class="navbar__registro">
-                        Sign UP
-                    </a>
-
-                </div>
+                
 
                 <a href="#" id="Lupa" class="navbar_lupa" aria-label="Lupa de Busqueda">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -440,11 +455,86 @@
                     </div>
                 </article>
 
+                <footer class="footer">
+                    <section>
+                        <img src="imagenes/logo-css.webp"
+                        srcset="
+                            imagenes/LogoLogin_movil.webp 120w,
+                            imagenes/LogoLogin_tablet.webp 160w,
+                            imagenes/LogoLogin_desktop.webp 200w
+                        "
+                        sizes="
+                            (max-width: 480px) 120px,
+                            (max-width: 768px) 160px,
+                            200px
+                        "
+                        alt="Logo de Calzado Cúcuta Store"
+                        class="navbar__logo logo--navbar">
+
+                        <p>
+                            Descubre las mejores marcas de calzado con la calidad, comodidad y estilo que buscas. Envíos a toda Colombia y atención personalizada.
+                        </p>
+
+                    </section>
+
+                    <section>
+                        <ul>
+                            <a href="#">
+                                <li>¿Que hacemos en Calzado Cucuta Store?</li>
+                            </a>
+                            <a href="#">
+                                <li>Politica y Privacidad</li>
+                            </a>
+                            <a href="#">
+                                <li>Terminos y Condiciones</li>
+                            </a>
+                            <a href="#">
+                                <li>Contactanos</li>
+                            </a>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <section>
+                            <p>
+                                <i class="fa-solid fa-envelope"></i>
+                                calzadocucutastore@gmail.com
+                            </p>
+
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Envios a toda Colombia | 1-3 Dias habiles
+                            </p>
+
+                            <p>
+                                <i class="fa-solid fa-credit-card"></i>
+                                Bancolombia | Nequi | Daviplata | Efecty
+                            </p>
+                        </section>
+
+                        <section>
+                            <a href="#" aria-label="Facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+
+                            <a href="#" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <a href="#" aria-label="WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </section>
+                    </section>
+
+                    <hr>
+
+                    <span>© 2026 Tienda Calzado Cúcuta. Todos los derechos reservados.</span>
+
+                </footer>
+
                 
     </main>
-
-
-
 
     <h2 id="nombreUsuario"></h2>
 </body>

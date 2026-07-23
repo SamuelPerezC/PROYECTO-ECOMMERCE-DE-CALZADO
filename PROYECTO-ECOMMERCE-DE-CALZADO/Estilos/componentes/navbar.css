@@ -1,0 +1,203 @@
+.navbar {
+    width: 100%;
+    max-width: 100%;
+
+    min-height: 80px;
+
+    padding: 0 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    background-color: var(--color-gray-50);
+
+    border-bottom: 1px solid var(--color-border-light);
+
+    box-shadow: var(--shadow-sm);
+}
+
+
+/* logo} */
+
+.navbar__logo {
+    flex-shrink: 0;
+}
+
+.navbar__logo-enlace {
+    display: flex;
+    align-items: center;
+}
+
+.logo--navbar {
+    display: block;
+
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* menu */
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    flex: 1;
+}
+
+.navbar__item {
+    position: relative;
+    white-space: nowrap;
+}
+
+.navbar__enlace {
+    position: relative;
+
+    display: block;
+
+    padding: 10px 0;
+
+    color: var(--color-text-primary);
+
+    text-decoration: none;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    transition: var(--transicion);
+}
+
+.navbar__enlace::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 0;
+    height: 2px;
+
+    background-color: var(--color-primary);
+
+    transition: var(--transicion);
+}
+
+.navbar__enlace:hover {
+    color: var(--color-primary-dark);
+}
+
+.navbar__enlace:hover::after {
+    width: 100%;
+}
+
+
+/* acciones de navbar */
+
+.navbar__acciones {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    flex-shrink: 0;
+}
+
+
+/* login y regsitro */
+
+.navbar__auth {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+}
+
+.navbar__login,
+.navbar__registro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 38px;
+
+    padding: 8px 14px;
+
+    border-radius: var(--radio-boton);
+
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: var(--transicion);
+}
+
+
+
+
+.navbar__login,
+.navbar__registro  {
+    color: var(--color-black);
+}
+
+.navbar__login:hover,
+.navbar__registro:hover{
+    background-color: var(--color-primary-light);
+}
+
+
+
+
+/* iconos*/
+
+.navbar__lupa,
+.navbar__favorito,
+.navbar__carrito {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
+
+    color: var(--color-icono);
+
+    text-decoration: none;
+
+    border-radius: 50%;
+
+    transition: var(--transicion);
+}
+
+.navbar__lupa:hover,
+.navbar__favorito:hover,
+.navbar__carrito:hover {
+    color: var(--color-primary-dark);
+
+    background-color: var(--color-primary-light);
+}
+
+.navbar__lupa i,
+.navbar__favorito i,
+.navbar__carrito i {
+    font-size: 1rem;
+}

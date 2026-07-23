@@ -104,23 +104,30 @@
 
             <div class="hero__contenido">
 
-                <p class="hero_subtitulo">Nueva Coleccion</p> 
-                <h1 class="hero__titulo">Encuentra Tu Proximo Par Favorito</h1>
+                <h2 class="hero__subtitulo">Nueva Coleccion</h2> 
+                <h1 class="hero__titulo">Encuentra Tu <span class="span__titulo">Proximo</span> Par Favorito</h1>
 
                 <p class="hero__texto">Los mejores estilos, la mejor calidad y el confort que tus pies merecen.</p>
 
-                <div class="hero__botones">
-                    <a href="#" class="boton__comprar">
-                    Comprar Ahora
-                    </a>
+                <div class="contenedor__botones">
+                    <div class="hero__botones">
+                        <a href="#" class="formulario-login__boton boton__comprar">
+                            Comprar Ahora
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
 
-                    <a href="#" class="boton__explorar">Explorar Coleccion</a>
+                        <a href="#" class="formulario-login__boton boton__explorar">
+                            Explorar Colección
+                        </a>
+                    </div>
                 </div>
                 
 
             </div>
 
             <picture class="hero__picture">
+                <div class="hero__circulo hero__circulo--izq"></div>
+                <div class="hero__circulo hero__circulo--der"></div>
                 <source
                     media="(max-width: 480px)"
                     srcset="../../Imagenes/hero-movil.webp"
@@ -132,7 +139,7 @@
                 >
 
                 <img
-                    src="#"
+                    src="imagenes/hero-desktop1.webp"
                     alt="Zapatos deportivos"
                     class="hero__imagen"
                     fetchpriority="high"
@@ -320,7 +327,8 @@
                         <a href="#" class="boton__principal boton-comprar"
                         data-nombre="Jordan Cadence"
                         data-precio="95000">
-                            Comprar
+                            Añadir al Carrito
+                            <i class="fa-solid fa-cart-shopping"></i>
                         </a>
 
                     </div>
@@ -363,7 +371,8 @@
                         <a href="#" class="boton__principal boton-comprar"
                         data-nombre="Adidas Bounce"
                         data-precio="95000">
-                            Comprar
+                            Añadir al Carrito
+                            <i class="fa-solid fa-cart-shopping"></i>
                         </a>
 
                     </div>
@@ -406,7 +415,8 @@
                         <a href="#" class="boton__principal boton-comprar"
                         data-nombre="Armani Exchange"
                         data-precio="90000">
-                            Comprar
+                            Añadir al Carrito
+                            <i class="fa-solid fa-cart-shopping"></i>
                         </a>
 
                     </div>
@@ -449,7 +459,8 @@
                         <a href="#" class="boton__principal boton-comprar"
                         data-nombre="Under Armaur"
                         data-precio="100000">
-                            Comprar
+                            Añadir al Carrito
+                            <i class="fa-solid fa-cart-shopping"></i>
                         </a>
 
                     </div>

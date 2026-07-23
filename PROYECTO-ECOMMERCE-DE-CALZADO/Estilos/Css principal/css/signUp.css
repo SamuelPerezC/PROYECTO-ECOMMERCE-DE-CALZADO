@@ -41,11 +41,43 @@
 /* hero */
 
 .hero {
+    position: relative;
+    width: 500px;
+    height: 450px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+}
 
-    padding: 10px 25px;
+.hero__circulo{
+    position: absolute;
+
+    border-radius: 50%;
+    background: radial-gradient(
+        circle,
+        rgba(22,229,107,.12)0%,
+        rgba(22,229,107,.35)45%,
+        rgba(22,229,107,.65)75%,
+        rgba(22,229,107,.9)100%,
+        transparent 100%
+    );
+    filter: blur(2px);
+    z-index: 1;
+}
+
+.hero__circulo--izq{
+    width: 350px;
+    height: 350px;
+    left: 30px;
+    top: 90px;
+}
+
+.hero__circulo--der{
+    width: 250px;
+    height: 250px;
+    right: 20px;
+    top: 35px;
 }
 
 
@@ -60,12 +92,13 @@
 
 
 .hero__imagen {
+    position: relative;
     width: 100%;
     max-width: 900px;
 
     object-fit: contain;
+    z-index: 2;
 }
-
 
 /* seccion registro */
 

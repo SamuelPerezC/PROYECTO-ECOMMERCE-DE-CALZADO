@@ -1,9 +1,12 @@
 /* header*/
 
 .header {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 100%;
     background-color: var(--color-bg);
+    
 }
 
 
@@ -77,6 +80,12 @@
     font-weight: bold;
 
     line-height: 1;
+}
+
+
+.menu{
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -236,4 +245,69 @@
 
     z-index: 2;
     object-fit: contain;
+}
+
+
+/* marcas */
+
+.marcas{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    gap: 0.4rem;
+}
+
+.title__marcas{
+    font-size: 1.2rem;
+}
+
+.title__marcas p{
+    max-width: 500px;
+}
+
+
+/*marcas contenedor*/
+
+.contenedor__marcas{
+    display: flex;
+    gap: 1.5rem;
+    
+}
+
+.marca{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-gray-100);
+    border-radius: 12px;
+    overflow: hidden;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+
+
+
+.marca__imagen{
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    padding: 1.5rem;
+}
+
+.marca__contenido{
+    padding: 1rem;
+    text-align: center;
+}
+
+
+.contenido__titulo{
+    color: var(--color-text-secondary);
+    transition: var(--transicion);
+}
+
+.contenido__titulo:hover{
+    color: var(--color-primary-hover);
+    translate: calc(10px);
 }

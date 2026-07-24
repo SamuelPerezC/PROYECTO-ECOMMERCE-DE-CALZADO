@@ -1,0 +1,10 @@
+.footer{
+    display: flex;
+    background-color: var(--color-black);
+}
+
+.footer__texto{
+    max-width: 400px;
+    text-transform: capitalize;
+}
+

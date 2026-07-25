@@ -93,7 +93,9 @@ hr{
     color: var(--color-white);
 }
 
+
 .derechosAutor{
     background-color: var(--color-black);
     color: var(--color-text-light);
+    display: block;
 }

@@ -49,5 +49,25 @@
     margin-left: 10px;
 }
 
+/* boton */
 
+.boton-comprar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: var(--color-gray-300);
+    padding: 10px;
+    border-radius: var(--radio-boton);
+    color: var(--color-text-primary);
 
+    width: 100%;
+    margin-top: auto;
+
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.boton-comprar:hover{
+    background-color: var(--color-gray-400);
+}

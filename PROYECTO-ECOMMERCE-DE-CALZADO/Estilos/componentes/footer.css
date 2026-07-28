@@ -43,6 +43,10 @@
     list-style:disc;
 }
 
+.enlaces__footer:hover{
+    color: var(--color-primary);
+}
+
 .footer__info{
     display: flex;
     flex-direction: column;

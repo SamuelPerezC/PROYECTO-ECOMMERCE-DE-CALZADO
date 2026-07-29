@@ -34,7 +34,13 @@ export default class ApiModelo{
 
     // obtner los clientes guardados
 
+
         const clientes = JSON.parse(localStorage.getItem("clientes") );
+
+        console.log("Clientes guardados:", clientes);
+        console.log("Correo ingresado:", correo);
+        console.log("Contraseña ingresada:", password);
+
 
         // si no hay usuarios devuelve vacio
         if(clientes == null){
@@ -47,9 +53,11 @@ export default class ApiModelo{
             usuario.password === password
 
         );
+        
+        console.log("Usuario encontrado:", usuario);
 
         // devuleve el usuario o null
-        return true || null;
+        return usuario || null;
 
     }
 

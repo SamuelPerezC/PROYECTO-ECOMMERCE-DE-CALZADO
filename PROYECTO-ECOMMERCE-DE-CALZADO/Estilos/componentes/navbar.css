@@ -161,6 +161,7 @@
 .navbar__login:hover,
 .navbar__registro:hover{
     background-color: var(--color-primary-light);
+    color: var(--color-primary-dark);
 }
 
 

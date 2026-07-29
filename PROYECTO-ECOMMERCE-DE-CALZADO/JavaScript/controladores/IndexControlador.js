@@ -4,7 +4,7 @@ const api = new ApiModelo();
 
 const usuarioActivo = api.obtenerUsuarioActivo();
 
-const nabvarAuth = document.querySelector(".navbar__auth");
+const navbarAuth = document.querySelector(".navbar__auth");
 
 function actualizarInterfazUsuario(usuario){
 

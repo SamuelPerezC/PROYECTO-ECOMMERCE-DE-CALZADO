@@ -2,7 +2,7 @@ export default class ClienteModelo{
     constructor(nombre, correo, contraseña){
         this.nombre = nombre;
         this.correo = correo;
-        this.contraseña = contraseña;
+        this.password = contraseña;
     }
 
     getNombre(){
@@ -14,7 +14,7 @@ export default class ClienteModelo{
     }
 
     getContraseña(){
-        return this.contraseña;
+        return this.password;
     }
 
     setNombre(nuevoNombre){
@@ -25,8 +25,8 @@ export default class ClienteModelo{
         this.correo = nuevoCorreo
     }
 
-    setContraseña(nuevoContraseña){
-        this.contraseña = nuevoContraseña
+    setContraseña(nuevoPassword){
+        this.password = nuevoPassword
     }
 
     validarNombre(){

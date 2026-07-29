@@ -201,6 +201,7 @@
 
 .navbar__lupa i,
 .navbar__favorito i,
-.navbar__carrito i {
+.navbar__carrito i, 
+.navbar__bienvenido i {
     font-size: 1rem;
 }

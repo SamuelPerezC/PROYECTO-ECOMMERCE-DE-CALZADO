@@ -18,7 +18,7 @@ formulario.addEventListener("submit", function(evento){
         api.guardarUsuarioActivo(usuario)
 
         alert(
-            `Bienvenido Usuario`
+            `Bienvenido Usuario ${usuario.nombre}`
         )
         window.location.href = "../../index.html";
     }else{

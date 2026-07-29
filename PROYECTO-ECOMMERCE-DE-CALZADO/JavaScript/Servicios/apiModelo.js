@@ -63,7 +63,7 @@ export default class ApiModelo{
     // 
 
     obtenerUsuarioActivo(){
-        localStorage.getItem("usuarioActivo");
+        return JSON.parse(localStorage.getItem("usuarioActivo"))
     }
 
 }

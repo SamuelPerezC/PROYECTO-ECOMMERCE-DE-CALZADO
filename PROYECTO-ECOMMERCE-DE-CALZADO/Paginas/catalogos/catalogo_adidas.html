@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../Estilos/Css principal/importaciones/style-catalogo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Catalogo Adidas | Calzado Cucuta Store</title>
+
+</head>
+<body>
+    <header class="header">
+        <section class="header__top">
+            <div>
+                <p>
+                    <i class="fa-solid fa-truck"></i>
+                    Envios a Toda Colombia (1-3 días hábiles)
+                </p>
+            </div>
+            <div>
+                <p>
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    Cambios Hasta Por 30 Dias
+                </p>
+            </div>
+            <div>
+                <p>
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    Pago 100% Seguro
+                </p>
+            </div>
+            
+            <div class="navbar__auth">
+
+                <a href="../signUp/signUp.html" class="navbar__registro">
+                    Crear Cuenta
+                </a>
+
+
+                <a href="../login/login.html" class="navbar__login">
+                    Iniciar Sesion
+                </a>
+
+                <i class="fa-solid fa-user"></i>
+
+            </div>
+        </section>
+
+        <nav class="navbar" aria-label="menu principal">
+            <div class="navbar__logo">
+                <a href="./index.html" class="navbar__logo-enlace">
+                    
+                    <img src="../../imagenes/logo-css.webp"
+                        srcset="
+                            ../../imagenes/LogoLogin_movil.webp 120w,
+                            ../../imagenes/LogoLogin_tablet.webp 160w,
+                            ../../imagenes/LogoLogin_desktop.webp 200w
+                        "
+                        sizes="
+                            (max-width: 480px) 120px,
+                            (max-width: 768px) 160px,
+                            200px
+                        "
+                        alt="Logo de Calzado Cúcuta Store"
+                        class="navbar__logo logo--navbar">
+
+                </a>       
+            </div>
+            <ul class="navbar__menu" >
+                <li class="navbar__item"><a href="../../index.html" class="navbar__enlace">Inicio</a></li>
+                <li class="navbar__item"><a href="../../index.html#marcas" class="navbar__enlace">Marcas</a></li>
+                <li class="navbar__item"><a href="../../index.html#productos" class="navbar__enlace">Productos</a></li>
+                <li class="navbar__item"><a href="../../index.html#contacto" class="navbar__enlace">Contacto</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__enlace">Nosotros</a></li>
+            </ul>
+
+            <div class="navbar__acciones">
+                
+                <a href="#" id="abrirCarrito" class="navbar__carrito" aria-label="Carrito de Compras">
+                    <span id="contador">0</span>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <main class="catalogo__menu">
+
+        <section class="catalogo__contenedor">
+            <article class="catologo__productos">
+                <img
+                        src="../../imagenes/BOUNCEBLANCOROJO.webp"
+
+                        srcset="
+                            ../../imagenes/BOUNCEBLANCOROJO-movil.webp 300w,
+                            ../../imagenes/BOUNCEBLANCOROJO-tablet.webp 500w,
+                            ../../imagenes/BOUNCEBLANCOROJO-desktop.webp 800w
+                        "
+
+                        sizes="
+                            (max-width: 480px) 300px,
+                            (max-width: 768px) 500px,
+                            800px
+                        "
+
+                        alt="Zapato deportivo Adidas Bounce"
+                        class="producto__imagen catalogo__imagen"
+                        loading="lazy"
+                    >
+            </article>
+
+            <div class="productos__disponibles">
+                <div class="contenedor__producto-disponible"><img src="" alt="zapato deportivo Adidas"></div>
+                <div class="contenedor__producto-disponible"><img src="" alt="zapato deportivo Adidas"></div>
+                <div class="contenedor__producto-disponible"><img src="" alt="zapato deportivo Adidas"></div>
+                <div class="contenedor__producto-disponible"><img src="" alt="zapato deportivo Adidas"></div>
+            </div>
+
+        </section>
+
+        <section>
+
+            <div class="catalogo__productos-contenedor">
+
+                <div class="informacion__producto">
+
+                    <h2 class="catalogo__titulo">
+                    Adidas Bounce
+                    </h2>
+
+                    <p class="catalogo__precio">
+                        $95.000
+                    </p>
+
+                </div>
+
+                <div>
+                    <h3 class="titulo__talla">Talla</h3>
+                </div>
+                
+                <div class="catalogo__talla">
+                    <div class="tallas__unicas">
+                        <div class="talla"><button>37</button></div>
+                        <div class="talla"><button>38</button></div>
+                        <div class="talla"><button>39</button></div>
+                        <div class="talla"><button>40</button></div>
+                        <div class="talla"><button>41</button></div>
+                        <div class="talla"><button>42</button></div>
+                        <div class="talla"><button>43</button></div>
+                    </div>
+                </div>
+
+                <div class="catalogo__boton">
+
+                    <a href="#" class="boton__comprar" data-nombre="Adidas Bounce" data-precio="95000">
+                        Añadir al Carrito
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+
+                </div>
+
+                
+
+                
+
+            </div>
+            
+            
+
+        </section>
+
+    </main>
+
+    <footer class="footer" id="contacto">
+            <section class="footer__seccion">
+                <img src="../../imagenes/LogoBlanco.webp"
+                srcset="
+                    ../../imagenes/LogoBlanco-movil.webp 120w,
+                    ../../imagenes/LogoBlanco-tablet.webp 160w,
+                    ../../imagenes/LogoBlanco-desktop.webp 200w
+                "
+                sizes="
+                    (max-width: 480px) 120px,
+                    (max-width: 768px) 160px,
+                    200px
+                "                  
+                alt="Logo de Calzado Cúcuta Store"
+                class="footer__logo logo--footer">
+
+                <p class="footer__texto">
+                    Descubre las mejores marcas de calzado con la calidad, comodidad y estilo que buscas. Envíos a toda Colombia y atención personalizada.
+                </p>
+
+            </section>
+
+            <section class="footer__enlaces">
+                <ul>
+                    <li>
+                        <a href="#" class="enlaces__footer">
+                            ¿Qué hacemos en Calzado Cúcuta Store?
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="enlaces__footer">
+                            Política y Privacidad
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="enlaces__footer">
+                            Términos y Condiciones
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="enlaces__footer">
+                            Contáctanos
+                        </a>
+                    </li>
+
+                </ul>
+            </section>
+
+            <section class="footer__redes">
+                <section class="footer__info">
+                    <p class="footer__texto footer--informacion">
+                        <i class="fa-solid fa-envelope"></i>
+                        calzadocucutastore@gmail.com
+                    </p>
+
+                    <p class="footer__texto footer--informacion">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Envios a toda Colombia | 1-3 Dias habiles
+                    </p>
+
+                    <p class="footer__texto footer--informacion">
+                        <i class="fa-solid fa-credit-card"></i>
+                        Bancolombia | Nequi | Daviplata | Efecty                            
+                    </p>
+                </section>
+
+                <section class="footer__reds">
+                    <div>
+                        <a href="https://www.facebook.com/CucutaCalzadoStore/" aria-label="Facebook" target="_blank" class="red">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </div>
+
+                        <div>
+                        <a href="https://www.instagram.com/calzadocucutastore1/" aria-label="Instagram" target="_blank" class="red">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                        
+                    <div>
+                        <a href="https://api.whatsapp.com/send/?phone=573132731250&text&type=phone_number&app_absent=0" target="_blank" aria-label="WhatsApp" class="red">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                    
+                </section>
+            </section>
+
+                
+
+        </footer>
+        <hr >
+
+
+        <span class="derechosAutor">© 2026 Tienda Calzado Cúcuta. Todos los derechos reservados.</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+    <script type="module" src="../../JavaScript/controladores/IndexControlador.js"></script>
+</body>
+</html>

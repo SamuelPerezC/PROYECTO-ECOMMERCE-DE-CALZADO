@@ -1,3 +1,93 @@
+/* header*/
+
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    background-color: var(--color-bg);
+    
+}
+
+
+/* barra superios */
+
+.header__top {
+    width: 100%;
+    max-width: 100%;
+    min-height: 38px;
+
+    padding: 0 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--color-white);
+    color: var(--color-text-primary);
+}
+
+.header__top div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__top p,
+.header__top a {
+    margin: 0;
+
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.header__top a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+
+    transition: var(--transicion);
+}
+
+.header__top a:hover {
+    color: var(--color-primary);
+}
+
+
+/* contador carrito */
+
+#contador {
+    position: absolute;
+
+    top: -2px;
+    right: -2px;
+
+    min-width: 17px;
+    height: 17px;
+
+    padding: 2px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--color-primary);
+
+    color: var(--color-black);
+
+    border-radius: 50%;
+
+    font-size: 0.65rem;
+    font-weight: bold;
+
+    line-height: 1;
+}
+
+
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+
 .navbar {
     position: sticky;
     top: 0;

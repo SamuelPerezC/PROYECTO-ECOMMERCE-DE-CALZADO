@@ -21,22 +21,7 @@
 }
 
 
-/* logo*/
 
-.main__logo {
-    grid-column: 1 / -1;
-
-    display: flex;
-    align-items: center;
-
-    height: 60px;
-}
-
-
-.main__logo img {
-    width: 200px;
-    height: auto;
-}
 
 
 /* hero */

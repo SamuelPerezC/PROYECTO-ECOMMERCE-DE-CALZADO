@@ -2,8 +2,9 @@
 @import url(../../base/variables.css);
 @import url(../../base/base.css);
 
-@import url(../../componentes/inputs.css);
+@import url(../../componentes/navbar.css);
 @import url(../../componentes/botones.css);
+@import url(../../componentes/footer.css);
 @import url(../../componentes/imagenes.css);
 
-@import url(../css/login.css);
+@import url(../css/catalogo.css);

@@ -51,23 +51,26 @@
 
 /* boton */
 
-.boton-comprar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    background-color: var(--color-gray-300);
-    padding: 10px;
+.boton__comprar {
+    display: inline-flex;
+    gap: 10px;
     border-radius: var(--radio-boton);
-    color: var(--color-text-primary);
 
-    width: 100%;
-    margin-top: auto;
+    padding: 14px 24px;
 
+    font-weight: 600;
     text-decoration: none;
     cursor: pointer;
+    transition: ease 0.3s;
+    background-color: var(--color-primary);
+
 }
 
-.boton-comprar:hover{
-    background-color: var(--color-gray-400);
+.boton__comprar:hover {
+    background-color: var(--color-primary-hover);
+    color: var(--color-black);
+}
+
+.boton-proucto{
+    background-color: var(--color-gray-300);
 }

@@ -32,8 +32,9 @@
 }
 
 .contenedor__producto-disponible{
-    gap: ;
+    box-sizing: border-box;
 }
+
 
 
 .catalogo__titulo{

@@ -27,7 +27,6 @@
     display: block;
     width: 100%;
     height: 250px;
-    border-top: var(--radio-contenedor);
     object-fit: cover;
     border-top-left-radius: var(--radio-contenedor);
     border-top-right-radius: var(--radio-contenedor);
@@ -36,4 +35,11 @@
 
 .catalogo__imagen{
     height: auto;
+    border-radius: var(--radio-contenedor);
+}
+
+.imagen-catalogo{
+    border-radius: var(--radio-contenedor);
+    width: 5rem;
+    height: 5rem;
 }

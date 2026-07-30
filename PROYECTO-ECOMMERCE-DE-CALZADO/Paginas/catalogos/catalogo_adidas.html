@@ -90,43 +90,123 @@
     <main class="catalogo__menu">
 
         <section class="catalogo__contenedor">
-            <article class="catologo__productos">
+            <figure class="catologo__productos">
                 <img
-                        src="../../imagenes/BOUNCEBLANCOROJO.webp"
+                    src="../../imagenes/productos/BOUNCEBLANCOROJO.webp"
+
+                    srcset="
+                        ../../imagenes/productos/BOUNCEBLANCOROJO-movil.webp 300w,
+                        ../../imagenes/productos/BOUNCEBLANCOROJO-tablet.webp 500w,
+                        ../../imagenes/productos/BOUNCEBLANCOROJO-desktop.webp 800w
+                    "
+
+                    sizes="
+                        (max-width: 480px) 300px,
+                        (max-width: 768px) 500px,
+                        800px
+                    "
+
+                    alt="Zapato deportivo Adidas Bounce"
+                    class="producto__imagen imagen_principal-catalogo"
+                    id="imagen__principal"
+                    loading="lazy"
+                >
+            </figure>
+
+            <!-- botones imagens -->
+
+            <div class="productos__disponibles">
+                <button class="contenedor__producto-disponible" type="button" data-id="1">
+                    <img
+                        src="../../imagenes/productos/BOUNCEBLANCOROJO.webp"
 
                         srcset="
-                            ../../imagenes/BOUNCEBLANCOROJO-movil.webp 300w,
-                            ../../imagenes/BOUNCEBLANCOROJO-tablet.webp 500w,
-                            ../../imagenes/BOUNCEBLANCOROJO-desktop.webp 800w
+                            ../../imagenes/productos/BOUNCEBLANCOROJO-movil.webp 120w,
+                            ../../imagenes/productos/BOUNCEBLANCOROJO-tablet.webp 160w,
+                            ../../imagenes/productos/BOUNCEBLANCOROJO-desktop.webp 200w
                         "
 
                         sizes="
-                            (max-width: 480px) 300px,
-                            (max-width: 768px) 500px,
-                            800px
+                            (max-width: 480px) 120px,
+                            (max-width: 768px) 160px,
+                            200px
                         "
 
-                        alt="Zapato deportivo Adidas Bounce"
+                        alt="Zapato deportivo Adidas Bounce blanco y rojo"
                         class="producto__imagen catalogo__imagen"
                         loading="lazy"
                     >
-            </article>
+                </button>
 
-            <div class="productos__disponibles">
-                <div class="contenedor__producto-disponible">
-                    <img src="../../imagenes/BOUNCEBLANCOROJO.webp" class="producto__imagen imagen-catalogo" alt="zapato deportivo Adidas">
-                </div>
-                <div class="contenedor__producto-disponible">
-                    <img src="../../imagenes/ARMANI-NEGRO.webp" class="producto__imagen imagen-catalogo" alt="zapato deportivo Adidas">
-                </div>
+
+                <button class="contenedor__producto-disponible" type="button" data-id="2">
+                    <img
+                        src="../../imagenes/productos/BOUNCENEGRO.webp"
+
+                        srcset="
+                            ../../imagenes/productos/BOUNCENEGRO-movil.webp 120w,
+                            ../../imagenes/productos/BOUNCENEGRO-tablet.webp 160w,
+                            ../../imagenes/productos/BOUNCENEGRO-desktop.webp 200w
+                        "
+
+                        sizes="
+                            (max-width: 480px) 120px,
+                            (max-width: 768px) 160px,
+                            200px
+                        "
+
+                        alt="Zapato deportivo Adidas Bounce negro"
+                        class="producto__imagen catalogo__imagen"
+                        loading="lazy"
+                    >
+                </button>
+
+
                 
-                <div class="contenedor__producto-disponible">
-                    <img src="../../imagenes/ARMANI-NEGRO.webp" class="producto__imagen imagen-catalogo" alt="zapato deportivo Adidas">
-                </div>
+                <button class="contenedor__producto-disponible" type="button" data-id="3">
+                    <img
+                        src="../../imagenes/productos/BOUNCEGRIS.webp"
 
-                <div class="contenedor__producto-disponible">
-                    <img src="../../imagenes/ARMANI-NEGRO.webp" class="producto__imagen imagen-catalogo" alt="zapato deportivo Adidas">
-                </div>
+                        srcset="
+                            ../../imagenes/productos/BOUNCEGRIS-movil.webp 120w,
+                            ../../imagenes/productos/BOUNCEGRIS-tablet.webp 160w,
+                            ../../imagenes/productos/BOUNCEGRIS-desktop.webp 200w
+                        "
+
+                        sizes="
+                            (max-width: 480px) 120px,
+                            (max-width: 768px) 160px,
+                            200px
+                        "
+
+                        alt="Zapato deportivo Adidas Bounce gris"
+                        class="producto__imagen catalogo__imagen"
+                        loading="lazy"
+                    >
+                </button>
+
+
+                <button class="contenedor__producto-disponible" type="button" data-id="4">
+                    <img
+                        src="../../imagenes/productos/BOUNCENEGROBLANCO.webp"
+
+                        srcset="
+                            ../../imagenes/productos/BOUNCENEGROBLANCO-movil.webp 120w,
+                            ../../imagenes/productos/BOUNCENEGROBLANCO-tablet.webp 160w,
+                            ../../imagenes/productos/BOUNCENEGROBLANCO-desktop.webp 200w
+                        "
+
+                        sizes="
+                            (max-width: 480px) 120px,
+                            (max-width: 768px) 160px,
+                            200px
+                        "
+
+                        alt="Zapato deportivo Adidas Bounce blanco y rojo"
+                        class="producto__imagen catalogo__imagen"
+                        loading="lazy"
+                    >
+                </button>
             </div>
 
         </section>
@@ -305,5 +385,6 @@
 
 
     <script type="module" src="../../JavaScript/controladores/IndexControlador.js"></script>
+    <script type="module" src="../../JavaScript/controladores/catalogoControlador.js"></script>
 </body>
 </html>

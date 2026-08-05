@@ -20,7 +20,7 @@ formulario.addEventListener("submit", function(evento){
     const confirmar = document.querySelector("#repeatPassword").value;
 
 
-// rectifica de que las contraseñas sean igual 
+// ve si es iguales las contraseñas 
     if(password !== confirmar){
         alert("Las Contraseñas Deben Coincidir");
         return;
@@ -31,7 +31,7 @@ formulario.addEventListener("submit", function(evento){
     const nuevoCliente = new ClienteModelo(nombre, correo, password);
 
 
-// validacion de que el usuario tenga al menos 3 caracteres
+// valida s i teine 3 caracteres
     if(!nuevoCliente.validarNombre()){
         alert("El nombre debe tener mínimo 3 caracteres");
         return;

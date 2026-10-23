@@ -19,7 +19,9 @@
     box-shadow: var(--sombra-login);
 }
 
-
+.main__logo{
+    justify-content: space-between;
+}
 
 /* hero */
 

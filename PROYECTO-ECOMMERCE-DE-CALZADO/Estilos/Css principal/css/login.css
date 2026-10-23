@@ -18,10 +18,14 @@
     border-radius: var(--radio-contenedor);
 
     box-shadow: var(--sombra-login);
+
+    justify-content: space-around;
 }
 
 
-
+.main__logo{
+    justify-content: space-between;
+}
 
 
 /* hero */

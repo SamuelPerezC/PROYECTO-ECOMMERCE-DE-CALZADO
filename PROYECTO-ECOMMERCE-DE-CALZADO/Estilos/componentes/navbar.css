@@ -296,3 +296,14 @@
 .navbar__bienvenido i {
     font-size: 1rem;
 }
+
+.enlace__volver{
+    background-color: var(--color-bg);
+    font-size: 0.9rem;
+}
+
+.fa-arrow-left{
+    color: var(--color-text-accent);
+
+
+}

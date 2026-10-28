@@ -145,148 +145,7 @@
                 <p>Trabajamos con marcas reconocidas para ofrecerte calidad, estilo y comodidad.</p>
             </div>
 
-            <div class="contenedor__marcas">
-                <article class="marca ">
-                    <a href="./Paginas/catalogos/catalogo_adidas.html">
-                        <div class="marca__contenedor-imagen">
-                            <img
-                                src="imagenes/marcas/adidas-desktop.webp"
-
-                                srcset="
-                                    imagenes/marcas/adidas-movil.webp 300w,
-                                    imagenes/marcas/adidas-tablet.webp 500w,
-                                    imagenes/marcas/adidas-desktop.webp 800w
-                                "
-
-                                sizes="
-                                    (max-width: 480px) 300px,
-                                    (max-width: 768px) 500px,
-                                    800px
-                                    "
-
-                                alt="Marca Adidas"
-                                class="producto__imagen"
-                                loading="lazy"
-                            >
-                        </div>
-
-                        <div class="marca__contenido">
-                            
-                            <h3 class="contenido__titulo">
-                                Ver Coleccion
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </h3>
-                        
-                        </div>
-                    </a>    
-                </article>
-
-                <article class="marca ">
-                    <a href="#">
-                        <div class="marca__contenedor-imagen">
-                            <img
-                                src="imagenes/marcas/under-desktop.webp"
-
-                                srcset="
-                                    imagenes/marcas/under-movil.webp 300w,
-                                    imagenes/marcas/under-tablet.webp 500w,
-                                    imagenes/marcas/under-desktop.webp 800w
-                                "
-
-                                sizes="
-                                    (max-width: 480px) 300px,
-                                    (max-width: 768px) 500px,
-                                    800px
-                                "
-
-                                alt="Marca Under Armaur"
-                                class="producto__imagen"
-                                loading="lazy"
-                            >
-                        </div>
-
-                        <div class="marca__contenido">
-                            
-                            <h3 class="contenido__titulo">
-                                Ver Coleccion
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </h3>
-                            
-                        </div>      
-                    </a>              
-                </article>
-
-                <article class="marca ">
-                    <a href="#">
-                        <div class="marca__contenedor-imagen">
-                            <img
-                                src="imagenes/marcas/jordan-desktop.webp"
-
-                                srcset="
-                                    imagenes/marcas/jordan-movil.webp 300w,
-                                    imagenes/marcas/jordan-tablet.webp 500w,
-                                    imagenes/marcas/jordan-desktop.webp 800w
-                                "
-
-                                sizes="
-                                    (max-width: 480px) 300px,
-                                    (max-width: 768px) 500px,
-                                    800px
-                                "
-
-                                alt="Marca Jordan"
-                                class="producto__imagen"
-                                loading="lazy"
-                            >
-                        </div>
-
-                        <div class="marca__contenido">
-                            
-                            <h3 class="contenido__titulo">
-                                Ver Coleccion
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </h3>
-                            
-                        </div>
-                    </a>
-                </article>
-
-                <article class="marca ">
-                    <a href="#">
-
-                        <div class="marca__contenedor-imagen">
-                            <img
-                                src="imagenes/marcas/armani-desktop.webp"
-
-                                srcset="
-                                    imagenes/marcas/armani-movil.webp 300w,
-                                    imagenes/marcas/armani-tablet.webp 500w,
-                                    imagenes/marcas/armani-desktop.webp 800w
-                                "
-
-                                sizes="
-                                    (max-width: 480px) 300px,
-                                    (max-width: 768px) 500px,
-                                    800px
-                                "
-
-                                alt="Marca Armani"
-                                class="producto__imagen"
-                                loading="lazy"
-                            >
-                        </div>
-
-                        <div class="marca__contenido">
-                            
-                            <h3 class="contenido__titulo">
-                                Ver Coleccion
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </h3>
-                        </div>
-                    </a>
-                </article>
-
-            </div>
+            <div class="contenedor__marcas" id="contenedorMarcas"></div>
         </section>
 
         <!-- Productos  -->
@@ -580,8 +439,10 @@
         
     </main>
 
+    
     <script type="module" src="JavaScript/controladores/IndexControlador.js"></script>
+    <script type="module" src="JavaScript/controladores/marcasControlador.js"></script>
+    
 </body>
 
-<script type="module" src="JavaScript/controladores/IndexControlador.js"></script>
 </html>
